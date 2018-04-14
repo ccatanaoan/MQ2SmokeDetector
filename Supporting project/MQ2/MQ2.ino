@@ -46,7 +46,7 @@ float           Ro           =  10;                 //Ro is initialized to 10 ki
 int temp = 0;
 void setup()
 {
-  Serial.begin(9600);                               //UART setup, baudrate = 9600bps
+  Serial.begin(115200);                               //UART setup, baudrate = 9600bps
   Serial.print("Calibrating...\n");
   Ro = MQCalibration(MQ_PIN);                       //Calibrating the sensor. Please make sure the sensor is in clean air
   //when you perform the calibration
